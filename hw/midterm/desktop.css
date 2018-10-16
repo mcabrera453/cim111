@@ -1,6 +1,6 @@
 
 header, footer{
-  background-color: Turquoise;
+background-color: Teal;
   height: 100px;
   width: 80%;
   margin: 0 auto;
@@ -12,7 +12,6 @@ header, footer{
 }
 
 main{
-  background-color: Teal;
   height: 50%;
   width: 80%;
   margin: 0 auto;
@@ -23,22 +22,20 @@ main{
 }
 
 nav{
-  background-color: grey;
-  width: 250px;
-  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  text-align: center;
 }
 
 nav ul li{
   display: inline-block;
   margin-right: 10px;
-  text-align: center;
 }
 
 nav ul li a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Krub', sans-serif;
-
 }
 
 .box{
@@ -47,4 +44,24 @@ nav ul li a{
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#video{
+  margin: 0 auto
+}
+
+#roles{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: grey;
+  text-decoration: underline;
 }

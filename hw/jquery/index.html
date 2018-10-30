@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>jQuery</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Mali|Spicy+Rice');
+
+    .box{
+      width: 150px;
+      height: 70px;
+      background-color: white;
+    }
+
+    body{
+      font-family: 'Mali', cursive;
+    }
+
+    nav ul li{
+      list-style: none;
+    }
+
+
+
+    #imageRecepticle{
+      text-align: center;
+    }
+
+</style>
+
+  </head>
+
+  <body>
+      <h1 id="textChange" >HOW TO BAKE: The Ultimate Cookie</h1>
+
+<nav>
+      <ul>
+          <li id="show">Step 1: Gather materials (click to view list)</li>
+          <div class="box">Cookie Dough<br>
+                          Cooking Sheet<br>
+                          Pam<br>
+
+                            </div>
+          <li>Step 2: Preheat oven to 350 degrees </li>
+          <li>Step 3: Spray Pam on cooking sheet to make sure the cookies do not stick</li>
+          <li>Step 4: Place cookies on sheet evenly and put into oven</li>
+          <li>Step 5: Remove from oven after 10 minutes, let cool down, and ENJOY! </li>
+
+      </ul>
+</nav>
+
+
+
+
+      <h2>Click to view images</h2>
+
+      <img id="image1" src="images/step1.JPG" width="100">
+      <img id="image2" src="images/step2.JPG" width="100">
+      <img id="image3" src="images/step5.JPG" width="100">
+      <div id="imageRecepticle"></div>
+
+      <!--local jquery script-->
+      <script src="js/jquery-3.3.1.min.js"></script>
+
+      <!-- remote version-->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+      $(document).ready(function(){
+        //All jquery code should be placed below
+
+        $(".box").hide();
+
+
+
+        $("body").css("background-color", "PowderBlue");
+        $("h1").css("color", "white")
+        $("h1").css("font-size", "50px");
+        $("h1").css("background-color", "DarkTurquoise")
+
+
+
+
+
+      $("#image1").click(function(){
+        $("#imageRecepticle").html('<img src="images/step1.JPG" width="500">');
+  });
+
+
+        $("#image2").click(function(){
+          $("#imageRecepticle").html('<img src="images/step2.JPG" width="500">');
+      });
+
+      $("#image3").click(function(){
+        $("#imageRecepticle").html('<img src="images/step5.JPG" width="500">');
+      });
+
+      $("#show").click(function(){
+        $(".box").hide("");
+
+      });
+
+      $("#show").click(function(){
+        $(".box").show();
+
+      });
+
+
+      });//end of document ready
+
+
+      </script>
+
+  </body>
+
+</html>

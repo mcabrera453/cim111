@@ -1,9 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css?family=Khula:800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-h1, h4{
-  font-family: 'Khula', sans-serif;
+h2{
+  text-align: center;
+font-size: 500%;
+color: white;
+font-family: 'Montserrat', sans-serif;
+
 }
 
 main{
@@ -20,6 +24,11 @@ header, footer{
   text-align: center;
 }
 
-#video{
-  /* opacity: 1.0; */
+h1, h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a{
+  font-family: 'Montserrat', sans-serif;
+
 }
